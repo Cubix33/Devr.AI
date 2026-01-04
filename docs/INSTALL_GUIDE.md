@@ -164,7 +164,7 @@ Weaviate is used for semantic search and embeddings storage. It runs in Docker:
 
 ```sh
 cd backend
-docker-compose up -d weaviate
+docker compose up -d weaviate
 ```
 
 The database will be available at `http://localhost:8080`
@@ -241,8 +241,8 @@ npm run lint  # Run ESLint
    docker ps
    
    # Restart Weaviate
-   docker-compose down
-   docker-compose up -d weaviate
+   docker compose down
+   docker compose up -d weaviate
    ```
 
 3. **Missing environment variables**
@@ -256,7 +256,7 @@ npm run lint  # Run ESLint
 
 ### Logs
 - Backend logs are displayed in the terminal where you run `python main.py`
-- Check Docker logs for Weaviate: `docker-compose logs weaviate`
+- Check Docker logs for Weaviate: `docker compose logs weaviate`
 
 ## Project Structure
 
